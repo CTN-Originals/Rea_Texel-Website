@@ -1,0 +1,270 @@
+:root {
+    --hoofdkleur: rgba(128, 68, 16, 1);
+    --subkleur: rgba(237, 213, 181, 1);
+    --kleur: rgba(87, 114, 4, 1);
+    --kleurtint: rgba(87, 114, 4, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    background-color: rgba(87, 114, 4, 0.2);
+    background-image: url(img/topography.svg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    padding: 1rem;
+    font-family: Signika, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    background-color: white;
+    padding: 4rem;
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside-t"
+        "aside-b"
+        "footer"
+    ;
+}
+
+.header {
+    grid-area: head;
+}
+
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+
+.aside-top {
+    grid-area: aside-t;
+}
+
+.aside-bottom {
+    grid-area: aside-b;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+nav,
+footer {
+    background-color: var(--hoofdkleur);
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: Itim, "Times New Roman", serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1rem 0px;
+    padding: 2rem;
+    background-color: var(--kleur);
+    color: white;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1::before,
+h1::after {
+    content:"";
+    background-image: url(img/wave.png);
+    background-repeat:no-repeat;
+    padding: 0 1.7rem;
+    position: relative;
+    top: 20px;
+    margin:0 .5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: var(--kleur);
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: var(--kleur);
+}
+
+h4{
+    font-size: 3rem;
+    margin: 1rem 0px;
+    padding: 2rem;
+    background-color:none;(--kleur);
+    color:forestgreen;
+}
+
+
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul li {
+    list-style-type: none;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Signika, Verdana, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.footer ul li:link {}
+
+.footer ul li:visited {}
+
+.footer ul li:hover {
+    background-color: var(--subkleur);
+}
+
+.footer ul li:active {}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-template-areas:
+            "head head head"
+            "nav nav nav"
+            "main main aside-t"
+            "main main aside-b"
+            "footer footer footer"
+        ;
+}
+
+    
+main .mainimg {
+    width: 46%;
+    margin: 2%;
+    padding: 0;
+    border: 1px solid var(--hoofdkleur);
+    border-radius: 1rem;
+}
+
+aside .asideimg {
+    width: 50%;
+    padding: 0;
+    border-top: 0;
+    border-radius: 0;
+
+}
+
+footer {
+    font-size: 2.4rem;
+}
+
+nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+nav ul li a {
+    background-image: url(img/shell.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-left: 6rem;
+}
+
+    
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted var(--kleur);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+        
+.footer ul {
+    flex-direction: row;
+}
+
+.footer ul li {
+    padding: 0 1rem;
+    border-bottom: none;
+    border-right: 1px solid white;
+}
+
+.footer ul li a {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:992px) {
+body {
+    width: 992px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.mail {
+    width: 200px;
+    position: absolute;
+    top:6.7rem;
+    left:53rem;    
+}
+    
+main .mainimg {
+    width: 25%;
+    float: left;
+}
+
+aside .asideimg {
+    width: 25% float:right;
+}
