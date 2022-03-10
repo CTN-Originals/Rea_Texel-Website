@@ -117,12 +117,12 @@ h3 {
     color: var(--kleur);
 }
 
-h4 {
+h4{
     font-size: 3rem;
     margin: 1rem 0px;
     padding: 2rem;
-    background-color: var(--kleur);
-    color: forestgreen;
+    background-color:none;(--kleur);
+    color:forestgreen;
 }
 
 
@@ -165,8 +165,9 @@ h4 {
             "nav nav nav"
             "main main aside-t"
             "main main aside-b"
-            "footer footer footer";
-    }
+            "footer footer footer"
+        ;
+}
 
     
 main .mainimg {
@@ -243,29 +244,27 @@ p {
 }
 
 @media screen and (min-width:992px) {
-    body {
-        width: 992px;
-        margin: 0 auto;
-    }
+body {
+    width: 992px;
+    margin: 0 auto;
+}
 
-    h1 {
-        font-size: 4rem;
-    }
+h1 {
+    font-size: 4rem;
+}
 
-    .mail {
-        width: 200px;
-        position: absolute;
-        top:6.7rem;
-        left:53rem;    
-    }
-        
-    main .mainimg {
-        width: 25%;
-        float: left;
-    }
+.mail {
+    width: 200px;
+    position: absolute;
+    top:6.7rem;
+    left:53rem;    
+}
+    
+main .mainimg {
+    width: 25%;
+    float: left;
+}
 
-    aside .asideimg {
-        width: 25%;
-        float: right;
-    }
-}}
+aside .asideimg {
+    width: 25% float:right;
+}
