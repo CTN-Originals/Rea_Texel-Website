@@ -3,10 +3,11 @@ html {
     background-color: #33230c;
 }
 .bg-img {
+    position: fixed;
     background-image: url("../images/topography.svg");
-    position: absolute;
+    background-repeat: repeat;
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
 
     z-index: -1000;
 }
