@@ -1,23 +1,74 @@
 section {
     display: flex;
-    flex-direction: row;
-    gap: 1em;
+    flex-direction: column;
+    /* gap: 1em; */
 
     width: 100%
 }
-section main {
+section content {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1em;
+}
+
+/*  ================ Section Header ================  */
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    
+    margin-bottom: 1em;
+}
+.section-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+
+    background-color: var(--detail);
+    color: var(--bg);
+
+    font-size: 20pt;
+}
+.section-title > * {
+    margin: 0.5em .5em;
+    flex-wrap: nowrap;
+    text-align: center;
+    text-overflow: clip;
+}
+
+.aside-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    color: var(--detail);
+}
+
+/*  ================ Main Content ================  */
+
+section content main {
     display: flex;
     flex-direction: column;
     width: 70%;
 }
-section main paragraph {
+section content main paragraph, paragraph p {
     position: relative;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
 
-    font-size: 1.25em;
-    font-family: sans-serif;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+}
+section content main .first-parag {
+    margin-top: 0em;
 }
 paragraph highlight {
     background-color: #57720440;
@@ -28,44 +79,45 @@ paragraph .parag-element {
     display: flex;
     position: relative;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.5em;
     float: left;
 
-    width: 50%;
+    width: 55%;
 }
 paragraph .parag-element > * {
-    margin: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0.2em;
 }
 paragraph .parag-element img {
     object-fit: contain;
-    width: 40%;
+    width: 45%;
 }
 
-section aside {
+/*  ================ Aside Content ================  */
+
+section content aside {
+    display: flex;
+    flex-direction: column;
     width: 30%;
 }
-
-.section-header {
+section content aside .aside-top {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    
-    margin-bottom: 1em;
 }
-.section-title {
+section content .aside-top {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+}
+section content .aside-top img {
+
+}
+
+section content aside .parag-element {
+    display: flex;
 
     width: 100%;
-
-    background-color: var(--detail);
-    color: var(--bg);
-
-    font-size: 20pt;
 }
-.section-title > * {
-    margin: 0.5em .5em;
+section content aside .parag-element .parag-item {
+    width: 45%;
 }

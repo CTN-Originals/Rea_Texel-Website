@@ -1,3 +1,27 @@
+a {
+    text-decoration: none;
+    color: var(--detail);
+}
+a:hover {
+    filter: brightness(120%);
+}
+li {
+    list-style-image: url("../images/default-ster.svg");
+}
+
+h3 {
+    padding-bottom: 0.8em;
+
+    color: var(--detail);
+    border-style: dotted;
+    border-bottom-color: var(--detail);
+    border-top-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+}
+
+/*  ================ Custom Styles ================  */
+
 .menue-container {
     width: 100%;
 
@@ -13,4 +37,8 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 1em;
+}
+
+.text-icon-theme {
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
 }

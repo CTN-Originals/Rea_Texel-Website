@@ -7,7 +7,7 @@ html {
     background-image: url("../images/topography.svg");
     background-repeat: repeat;
     width: 100vw;
-    height: 100vw;
+    height: 200vw;
 
     z-index: -1000;
 }
@@ -27,18 +27,10 @@ body {
     
     gap: 0.5em;
     min-width: 40em;
-    max-width: 60%;
-    padding: 2em;
+    max-width: 75%;
+    padding: 1em 1.25em;
 
     background-color: var(--bg);
-}
-
-a {
-    text-decoration: none;
-    color: var(--detail);
-}
-a:hover {
-    filter: brightness(120%);
 }
 
 header {
