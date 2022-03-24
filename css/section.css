@@ -11,8 +11,9 @@ section main {
     width: 70%;
 }
 section main paragraph {
+    position: relative;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
     font-size: 1.25em;
     font-family: sans-serif;
@@ -23,6 +24,23 @@ paragraph highlight {
     padding: 0 0.15em;
     border-radius: 0.2em;
 }
+paragraph .parag-element {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 1em;
+    float: left;
+
+    width: 50%;
+}
+paragraph .parag-element > * {
+    margin: 0.5em;
+}
+paragraph .parag-element img {
+    object-fit: contain;
+    width: 40%;
+}
+
 section aside {
     width: 30%;
 }
