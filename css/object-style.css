@@ -5,9 +5,6 @@ a {
 a:hover {
     filter: brightness(120%);
 }
-li {
-    list-style-image: url("../images/default-ster.svg");
-}
 
 h3 {
     padding-bottom: 0.8em;
@@ -31,6 +28,12 @@ h3 {
     border-radius: 2px;
     transition: 1s;
 }
+.panel {
+    display: flex;
+    box-sizing: border-box;
+    
+    background-color: var(--detail);
+}
 
 .smooth-image {
     border-color: var(--main);
@@ -39,6 +42,11 @@ h3 {
     border-radius: 1em;
 }
 
-.text-icon-theme {
-    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+.star-list {
+    list-style-image: url("../images/default-ster.svg");
+}
+.second-star-list {
+    list-style-image: url("../images/second-ster.svg");
+    list-style-position: inside;
+    padding-left: 0em;
 }
