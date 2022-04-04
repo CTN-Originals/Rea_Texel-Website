@@ -132,29 +132,50 @@ section content aside .parag-element .parag-item {
 aside .contact-panel {
     display: flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     padding: 1em 0.5em;
 }
 aside .contact-panel .contact-items {
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 1em;
+    width: 93%;
 }
 aside .contact-panel .contact-item {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 0.4em;
+    box-sizing: border-box;
     
+    width: 100%;
     padding: 0.2em 0.2em;
 
     background-color: var(--detail2);
     color: white;
+
+    transition: all 1s 0.2s;
+}
+aside .contact-panel .contact-item:hover {
+    box-sizing: border-box;
+    padding: 0.8em 0.8em;
+    font-size: 14pt;
+
+    transition: 0.2s;
 }
 .contact-panel ul {
     padding: 0;
     margin: 0;
 }
+.contact-panel li {
+    display: flex;
+    justify-content: center;
+}
 .contact-item img {
+    position: absolute;
+    left: 0.4em;
     width: 1em;
     object-fit: contain;
 }
