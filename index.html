@@ -12,19 +12,20 @@
         <link href="css/object-style.css" rel="stylesheet" type="text/css">
         <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/root-variables.css" rel="stylesheet" type="text/css">
+        <link href="css/z-index.css" rel="stylesheet" type="text/css">
         <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
         <!-- <link href="css/opmaak.css" rel="stylesheet" type="text/css"> -->
         <!-- <link href="https://fonts.googleapis.com/ccs?family=Itim&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
         
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     </head>
-    <body>
+    <body id="body">
         <div class="bg-img"></div>
         <div class="container">
             <header>
                 <img src="images/texel-schapen.jpg">
             </header>
-            <nav class="menue-container">
+            <nav class="menue-container" id="nav">
                 <div class="nav-item active">
                     <img class="nav-item-icon" src="images/shell.svg">
                     <p class="nav-item-text">Texel</p>
@@ -160,7 +161,7 @@
                     </aside>
                 </content>
             </section>
-            <footer class="menue-container">
+            <footer class="menue-container" id="footer">
                 <div class="footer-content footer-left">
                     <a href="">© Copyright</a>
                     <p>|</p>
@@ -180,6 +181,9 @@
             </footer>
         </div>
     </body>
-    <script src="js/main.js"></script>
     <script src="js/pageLoader.js"></script>
+    <script src="js/referanceManager.js"></script>
+    <script src="js/events/eventHandler.js"></script>
+    <script src="js/events/scrollEvent.js"></script>
+    <script src="js/main.js"></script>
 </html>

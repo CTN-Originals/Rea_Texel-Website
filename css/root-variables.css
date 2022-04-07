@@ -7,3 +7,9 @@
 
     --bg: #e9decfd0;
 }
+
+:root { /* Scales */
+    --scrollbarWidth: 17px;
+    --vw: 100vw;
+    --vh: 100vh;
+}

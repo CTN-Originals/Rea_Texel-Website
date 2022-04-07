@@ -2,9 +2,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+
+    transition: all 0.5s ease-in-out;
 }
 nav > * {
     margin: 0.8em;
+}
+
+.nav-top-position {
+    justify-content: space-around;
+    width: calc(var(--vw) - var(--scrollbarWidth)) !important;
+    transition: all 0.4s ease-out !important;
+
+    box-shadow: 2px 2px 1px #000000;
+}
+.nav-top-position > * {
+    margin: 0.8 0;
 }
 
 .nav-item {
