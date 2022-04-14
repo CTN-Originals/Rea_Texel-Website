@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="css/nav.css" rel="stylesheet" type="text/css">
         <link href="css/section.css" rel="stylesheet" type="text/css">
-        <link href="css/object-style.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css">
         <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/root-variables.css" rel="stylesheet" type="text/css">
+        <link href="css/object-style.css" rel="stylesheet" type="text/css">
         <link href="css/z-index.css" rel="stylesheet" type="text/css">
         <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
         <!-- <link href="css/opmaak.css" rel="stylesheet" type="text/css"> -->
@@ -105,7 +105,7 @@
                         </paragraph>
                     </main>
                     <aside>
-                        <div class="asside-top">
+                        <div class="aside-top">
                             <div class="parag-element">
                                 <img class="parag-item" src="images/zeehond300x200.jpg">
                                 <img class="parag-item" src="images/duinen300x200.jpg">
@@ -130,14 +130,14 @@
                                 </i>
                             </p>
                         </div>
-                        <div class="asside-bottom">
-                            <h3>Maak nu een aspraak</h3>
-                            <p>
-                                <i>
-                                    U kunt op verschillende manieren contact met ons opnemen.
-                                </i>
-                            </p>
-                            <div class="panel contact-panel">
+                        <div class="aside-bottom">
+                            <div class="aside-bottom-content aside-bottom-text">
+                                <h3>Maak nu een aspraak</h3>
+                                <p>
+                                    <i>U kunt op verschillende manieren contact met ons opnemen.</i>
+                                </p>
+                            </div>
+                            <div class="aside-bottom-content panel contact-panel">
                                 <ul class="contact-items" style="list-style-type: none;">
                                     <li class="contact-item contact-item-phone" onclick="loadPage('tel:06-2345678', true)">
                                         <img src="images/icons/phone.png" alt="phone">
@@ -147,11 +147,11 @@
                                         <img src="images/icons/post.png" alt="post">
                                         <p>info@texel-strand.nl</p>
                                     </li>
-                                    <li class="contact-item contact-item-website" onclick="loadPage('www.texel-strand.nl', true)">
+                                    <li class="contact-item contact-item-website" onclick="loadPage('http:\/\/www.texel-strand.nl', true)">
                                         <img src="images/icons/www.png" alt="website">
                                         <p>www.texel-strand.nl</p>
                                     </li>
-                                    <li class="contact-item contact-item-location">
+                                    <li class="contact-item contact-item-location" onclick="loadPage('http:\/\/www.google.nl/maps/place/Jumbo/@53.0553638,4.7946713,17.87z/data=!4m8!1m2!2m1!1sweststrand,+paal+12!3m4!1s0x47cf30be6efc6e59:0x21787b3cc7f550b6!8m2!3d53.0552991!4d4.7954073', true)">
                                         <img src="images/icons/location.png" alt="location">
                                         <p>weststrand, paal 12</p>
                                     </li>

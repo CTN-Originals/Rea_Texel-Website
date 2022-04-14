@@ -52,7 +52,7 @@ header > img {
 
 footer {
     display: flex;
-    position: sticky;
+    /* position: sticky; */
     flex-direction: row;
     justify-content: space-between;
 
@@ -64,6 +64,7 @@ footer {
     font-weight: 500;
     box-sizing: border-box;
 }
+footer p {color: white;}
 /* footer > * {
     margin: 0em 0.5em;
 } */

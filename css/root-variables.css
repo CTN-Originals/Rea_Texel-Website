@@ -1,11 +1,14 @@
 :root { /* Colors */
+    --bg: #e9decfd0;
+
     --main: #804410; /* #804410;    /* rgba(128, 68, 16, 1); */
     --second: #EDD5B5; /* #EDD5B5;  /* rgba(237, 213, 181, 1); */
     --detail: #577204; /* #577204;  /* rgba(87, 114, 4, 1); */
     --detail2: #4c5f12; /* #577204;  /* rgba(87, 114, 4, 1); */
     --accent: #292F19; /* #292F19;  /* rgba(87, 114, 4, 0.2); */
 
-    --bg: #e9decfd0;
+    --font: #000000;
+    --link: #0caf5b;
 }
 
 :root { /* Scales */

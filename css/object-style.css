@@ -1,20 +1,21 @@
+p, i, li {
+    color: var(--font);
+}
+
 a {
     text-decoration: none;
-    color: var(--detail);
+    color: var(--link);
 }
 a:hover {
     filter: brightness(120%);
 }
 
 h3 {
-    padding-bottom: 0.8em;
+    padding-bottom: 0.4em;
 
     color: var(--detail);
-    border-style: dotted;
+    border-bottom-style: dotted;
     border-bottom-color: var(--detail);
-    border-top-color: #00000000;
-    border-left-color: #00000000;
-    border-right-color: #00000000;
 }
 
 /*  ================ Custom Styles ================  */

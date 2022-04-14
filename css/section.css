@@ -109,24 +109,47 @@ section content aside {
     justify-content: space-between;
     width: 30%;
 }
+
 section content aside .aside-top {
     display: flex;
-}
-section content .aside-top {
-    display: flex;
-
-}
-section content .aside-top img {
-
+    flex-direction: column;
+    margin-bottom: -2em;
 }
 
 section content aside .parag-element {
     display: flex;
-
     width: 100%;
 }
 section content aside .parag-element .parag-item {
     width: 45%;
+}
+
+section content aside .aside-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+aside .aside-bottom .aside-bottom-text {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+
+    bottom: 7.5em;
+}
+aside .aside-bottom .panel {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+
+    bottom: 0.5em;
+}
+
+aside .aside-bottom .aside-bottom-text h3 {
+    text-align: center;
+}
+aside .aside-bottom .aside-bottom-text p {
+    margin-top: 0em;
 }
 
 aside .contact-panel {
@@ -172,6 +195,7 @@ aside .contact-panel .contact-item:hover {
 .contact-panel li {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .contact-item img {
     position: absolute;
@@ -181,4 +205,5 @@ aside .contact-panel .contact-item:hover {
 }
 .contact-item p {
     margin: 0;
+    color: var(--second)
 }

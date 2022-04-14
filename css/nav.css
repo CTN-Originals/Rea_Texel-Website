@@ -5,6 +5,9 @@ nav {
     position: sticky;
     top: 0;
 
+    font-family: sans-serif;
+    font-weight: bold;
+
     transition: all 0.5s ease-in-out;
 }
 nav > * {
@@ -13,10 +16,12 @@ nav > * {
 
 .nav-top-position {
     justify-content: space-around;
-    width: calc(var(--vw) - var(--scrollbarWidth)) !important;
-    transition: all 0.4s ease-out !important;
 
-    box-shadow: 2px 2px 1px #000000;
+    width: calc(var(--vw) - var(--scrollbarWidth)) !important;
+    filter: drop-shadow(2px 2px 1px #000000);
+    /* margin-bottom: 2em; */
+
+    transition: all 0.4s ease-out !important;
 }
 .nav-top-position > * {
     margin: 0.8 0;
@@ -44,6 +49,7 @@ nav > * {
 
     transition: 0.5s;
 }
+.nav-item p {color: var(--main);}
 .nav-item:hover {
     border-radius: 5px;
     box-shadow: 2px 2px 0.5px #000000f0;
