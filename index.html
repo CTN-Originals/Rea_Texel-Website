@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="css/section.css" rel="stylesheet" type="text/css">
+        <link href="css/header.css" rel="stylesheet" type="text/css">
         <link href="css/nav.css" rel="stylesheet" type="text/css">
-        <link href="css/fonts.css" rel="stylesheet" type="text/css">
-        <link href="css/root-variables.css" rel="stylesheet" type="text/css">
-        <link href="css/object-style.css" rel="stylesheet" type="text/css">
-        <link href="css/z-index.css" rel="stylesheet" type="text/css">
+        <link href="css/section.css" rel="stylesheet" type="text/css">
+        <link href="css/core/fonts.css" rel="stylesheet" type="text/css">
+        <link href="css/core/root-variables.css" rel="stylesheet" type="text/css">
+        <link href="css/core/object-style.css" rel="stylesheet" type="text/css">
+        <link href="css/core/z-index.css" rel="stylesheet" type="text/css">
         <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
         <!-- <link href="css/opmaak.css" rel="stylesheet" type="text/css"> -->
         <!-- <link href="https://fonts.googleapis.com/ccs?family=Itim&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
@@ -34,11 +35,11 @@
                     <img class="nav-item-icon" src="images/shell.svg">
                     <p class="nav-item-text">Activiteiten</p>
                 </div>
-                <div class="nav-item" href="overnachten.html">
+                <div class="nav-item" onclick="loadPage('overnachten.html')">
                     <img class="nav-item-icon" src="images/shell.svg">
                     <p class="nav-item-text">Overnachten</p>
                 </div>
-                <div class="nav-item" href="contact.html">
+                <div class="nav-item" onclick="loadPage('contact.html')">
                     <img class="nav-item-icon" src="images/shell.svg">
                     <p class="nav-item-text">Contact</p>
                 </div>
@@ -181,8 +182,8 @@
             </footer>
         </div>
     </body>
-    <script src="js/pageLoader.js"></script>
     <script src="js/referanceManager.js"></script>
+    <script src="js/pageLoader.js"></script>
     <script src="js/events/eventHandler.js"></script>
     <script src="js/events/scrollEvent.js"></script>
     <script src="js/main.js"></script>

@@ -17,7 +17,7 @@ nav > * {
 .nav-top-position {
     justify-content: space-around;
 
-    width: calc(var(--vw) - var(--scrollbarWidth)) !important;
+    width: calc(100vw - var(--scrollbarWidth)) !important;
     filter: drop-shadow(2px 2px 1px #000000);
     /* margin-bottom: 2em; */
 

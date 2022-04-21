@@ -14,3 +14,7 @@ function updateElementPositions(scrollPos) {
     console.log('offsetTop: ' + footer.offsetTop)
     console.log('offsetHeight: ' + footer.offsetHeight + '\n')
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
