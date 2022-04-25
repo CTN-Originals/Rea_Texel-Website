@@ -89,7 +89,12 @@ paragraph .parag-element {
     gap: 0.5em;
     float: left;
 
-    width: 55%;
+    /* background-color: #FF000090; */
+    
+    min-width: 10em;
+    width: 50%;
+    /* height: 100%; */
+    /* max-width: 20em; */
 }
 paragraph .parag-element > * {
     margin-top: 1em;

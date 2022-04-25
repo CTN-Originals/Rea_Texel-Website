@@ -18,32 +18,69 @@ header .enabled {
     width: 100%;
     height: 100%;
     left: 0;
+    top: 0;
+    opacity: 100%;
 
     transition: 2s ease-in-out;
-    z-index: 100;
+    z-index: 101 !important;
 }
 header .disabled {
     display: flex;
-    left: 100%;
-    width: 100%;
-    height: 100%;
+    top: var(--header-image-out-top);
+    left: var(--header-image-out-left);
+    width: var(--header-image-out-width);
+    height: var(--header-image-out-height);
+    opacity: 0;
 
-    transition: 2s ease-in-out;
-    z-index: 99;
-}
+    z-index: 99 !important;
+    transition: 2s ease-in-out var(--header-image-transition-delay)}
 
 header .activating {
-    left: -100%;
+    top: var(--header-image-in-top) !important;
+    left: var(--header-image-in-left) !important;
+    width: var(--header-image-in-width) !important;
+    height: var(--header-image-in-height) !important;
     object-position: 50% 50%;
-    z-index: 101 !important;
-    transition: 0s ease-in-out 0s;
+    opacity: 100%;
+
+    transition: 0s ease-in-out;
+    z-index: 102 !important;
 }
 header .deactivating {
-    
+    top: var(--header-image-out-top) !important;
+    left: var(--header-image-out-left) !important;
+    width: var(--header-image-out-width) !important;
+    height: var(--header-image-out-height) !important;
+    object-position: 50% 50%;
+
+    transition: 2s ease-in-out var(--header-image-transition-delay);
+    z-index: 100 !important;
 }
 
+:root { /* Image scroll cycle positions */
+    --header-image-in-top: 0;
+    --header-image-in-left: -100%;
+    --header-image-in-width: 100%;
+    --header-image-in-height: 100%;
+
+    --header-image-out-top: 0;
+    --header-image-out-left: 100%;
+    --header-image-out-width: 100%;
+    --header-image-out-height: 100%;
+
+}
+:root {
+    --header-image-transition-delay: 1s;
+}
+/* Index */
+#header-image-sheep:not(.activating) {object-position: 0 80%;}
+
+/* Activiteiten */
 #header-image-fietstocht:not(.activating) {object-position: 0 85%;}
 #header-image-karting:not(.activating) {object-position: 0 40%;}
-#header-image-lopifit:not(.activating) {object-position: 0 72.5%;}
+#header-image-lopifit:not(.activating) {object-position: 0 58%;}
 #header-image-blokarten:not(.activating) {object-position: 0 80%;}
-#header-image-wandelen:not(.activating) {object-position: 0 55%;}
+#header-image-wandelen:not(.activating) {object-position: 0 45%;}
+#header-image-speeltuin:not(.activating) {object-position: 0 74%;}
+#header-image-duinen:not(.activating) {object-position: 0 60%;}
+#header-image-hotel:not(.activating) {object-position: 0 74%;}

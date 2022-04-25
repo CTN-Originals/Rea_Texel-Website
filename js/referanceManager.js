@@ -13,8 +13,6 @@ function init() {
 function updateScales() {
     // baseElements.scales.scrollbarWidth = getScrollbarWidth();
     // document.documentElement.style.setProperty('--scrollbarWidth', baseElements.scales.scrollbarWidth)
-
-    console.log(getScrollbarState(baseElements.body))
 }
 
 function getScrollbarWidth() {
