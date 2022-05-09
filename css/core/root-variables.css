@@ -7,6 +7,12 @@
     --detail2: #4c5f12; /* #577204;  /* rgba(87, 114, 4, 1); */
     --accent: #292F19; /* #292F19;  /* rgba(87, 114, 4, 0.2); */
 
+    --card-main: #a2d5fa;
+    --card-second: #00415f;
+    --card-detail: #0c425c;
+    --card-accent: #ffffff;
+    --card-accent2: #aaaaaa;
+
     --font: #000000;
     --link: #0caf5b;
 }

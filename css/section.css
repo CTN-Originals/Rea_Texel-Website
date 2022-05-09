@@ -34,6 +34,8 @@ section content {
     background-color: var(--detail);
     color: var(--bg);
 
+    border-radius: 0.2em;
+
     font-family: baby-school;
     font-size: 20pt;
 }
@@ -50,6 +52,7 @@ section content {
     align-items: center;
     width: 30%;
     color: var(--detail);
+    font-family: sans-serif;
 }
 
 /*  ================ Main Content ================  */
