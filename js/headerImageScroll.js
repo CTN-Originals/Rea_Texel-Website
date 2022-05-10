@@ -29,7 +29,7 @@ var headerCssRootIndex;
 
 
 function init() {
-    console.log(headerCss)
+    // console.log(headerCss)
     for (const item in headerCss.cssRules) {
         const rule = headerCss.cssRules[item];
         if (rule.selectorText.includes(':root')) {

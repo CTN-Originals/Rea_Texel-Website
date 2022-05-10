@@ -1,3 +1,12 @@
+.card-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -5,9 +14,9 @@
     align-items: center;
     text-align: center;
 
-    min-width: 15em;
+    min-width: 10em;
     width: 40%;
-    max-width: 25em;
+    max-width: 30em;
 
     height: 24em;
 
@@ -24,7 +33,7 @@
 .card-top {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     width: 100%;
@@ -45,7 +54,7 @@
     margin-bottom: 0.5em;
 
     object-fit: cover;
-    object-position: 0 80%;
+    /* object-position: 0 80%; */
 
     border-style: inset;
     border-color: var(--card-accent);

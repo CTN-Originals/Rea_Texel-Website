@@ -76,36 +76,34 @@
                             ---------
                             description
                             ---------
-                            btn: website page 
+                            btn: website page  | btn: info
                             Price | btn: order now
                         -->
-                        <div class="card" id="example-card">
-                            <div class="card-top">
-                                <p class="card-title">Surf School</p>
-                                <img class="card-image" src="images/activiteiten/cards/surfschool.png" alt="surfschool">
-                                <div class="card-description">
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
-                                    Some text to describe this activity here.
+                        <div class="card-display" id="card-display">
+                            <div class="card" id="example-card">
+                                <div class="card-top">
+                                    <p class="card-title">Surf School 1</p>
+                                    <img class="card-image" src="images/activiteiten/cards/surfschool.png" alt="surfschool">
+                                    <div class="card-description">
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                    </div>
                                 </div>
-                            </div>
-                            <!----><div class="card-line-seperator"></div><!---->
-                            <div class="card-bottom">
-                                <div class="card-bottom-links">
-                                    <div class="card-button card-button-website">Website</div>
-                                    <div class="card-button card-button-info">Informatie</div>
-                                </div>
-                                <div class="card-bottom-buy">
-                                    <div class="card-price">€28.99</div>
-                                    <div class="card-button card-button-buy">Boeken</div>
+                                <!----><div class="card-line-seperator"></div><!---->
+                                <div class="card-bottom">
+                                    <div class="card-bottom-links">
+                                        <div class="card-button card-button-website" onclick="loadPage('https:\/\/www.surfschool-texel.nl/', true)">Website</div>
+                                        <div class="card-button card-button-info" onclick="loadPage('https:\/\/www.surfschool-texel.nl/surfschool-texel', true)">Informatie</div>
+                                    </div>
+                                    <div class="card-bottom-buy">
+                                        <div class="card-price">€28.99</div>
+                                        <div class="card-button card-button-buy" onclick="loadPage('https:\/\/www.surfschool-texel.nl/direct-boeken', true)">Boeken</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -168,5 +166,6 @@
     <script src="js/events/eventHandler.js"></script>
     <script src="js/events/scrollEvent.js"></script>
     <script src="js/headerImageScroll.js"></script>
+    <script src="js/activityCards.js"></script>
     
 </html>

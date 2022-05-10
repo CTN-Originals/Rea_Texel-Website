@@ -10,11 +10,14 @@ function updateElementPositions(scrollPos) {
     else {
         nav.classList.remove('nav-top-position');
     }
-    console.log('\ninnerHeight: ' + window.innerHeight)
-    console.log('offsetTop: ' + footer.offsetTop)
-    console.log('offsetHeight: ' + footer.offsetHeight + '\n')
+    // console.log('\ninnerHeight: ' + window.innerHeight)
+    // console.log('offsetTop: ' + footer.offsetTop)
+    // console.log('offsetHeight: ' + footer.offsetHeight + '\n')
 }
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
