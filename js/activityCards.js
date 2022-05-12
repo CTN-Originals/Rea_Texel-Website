@@ -18,8 +18,45 @@ const cardData = {
         infoPage: 'https://www.surfschool-texel.nl/surfschool-texel',
         buyPage: 'https://www.surfschool-texel.nl/direct-boeken',
         prices: [9.89, 19.99, 48.49, 54.88, 65.02],
-        color: '#ffff00',
-        shadow: '#aa00aa'
+        color: '#9bcae9',
+        shadow: '#277dad'
+    },
+    zeeDieren: {
+        title: 'Zee Dieren',
+        image: {
+            file: 'zee-dieren.png',
+            posX: '0',
+            posY: '30%'
+        },
+        description: [
+            'Ben je op Texel, dan ga je naar Ecomare',
+            'Een bezoek aan dit centrum is leuk en boeiend voor alle leeftijden',
+            'Geniet van de jonge zeehonden in de opvang, bekijk de zeehonden in de vaste groep boven én onder water en verbaas je over alles wat er leeft in de zee in het Zeeaquarium',
+            'De interactieve tentoonstelling Wonderlijk Wad laat een diepe indruk achter; wat is de natuur toch bijzonder',
+            'De Waddenzee is niet voor niets een UNESCO Werelderfgoed-gebied',
+            'Hulpbehoevende vogels worden verzorgd in de Vogelopvang',
+            'Daar zie je ook een groep jan-van-genten: indrukwekkende, mooie zeevogels',
+            'Ze delen hun verblijf met aalscholvers en bergeenden',
+            'In de Walviszaal sta je tussen de gigantische skeletten van een potvis en een bultrug en je ontdekt er wat wordt bedoeld met ‘een schat uit de darmen van de potvis’',
+            'Er valt zoveel te beleven',
+            'Koop vooraf je kaartjes op www',
+            'ecomare',
+            'nl',
+            'Ecomare is dagelijks van 09',
+            '30 uur - 17',
+            '00 uur geopend (m',
+            'u',
+            'v',
+            '1e kerstdag en nieuwjaarsdag)',
+            'De kassa sluit om 16',
+            '30 uur'
+        ],
+        websitePage: 'https://www.ecomare.nl/',
+        infoPage: 'https://www.ecomare.nl/verdiep/',
+        buyPage: 'https://www.ecomare.nl/plan/',
+        prices: [9.89, 19.99, 48.49, 54.88, 65.02],
+        color: '#76b997',
+        shadow: '#053f94'
     }
 }
 
