@@ -1,6 +1,6 @@
 html {
     /* background-image: url("../images/topography.svg"); */
-    background-color: #33230c;
+    background-color: var(--main);
 }
 .bg-img {
     position: fixed;

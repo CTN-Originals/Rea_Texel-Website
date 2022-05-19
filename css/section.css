@@ -22,6 +22,7 @@ section content {
     gap: 1em;
     
     margin-bottom: 1em;
+    font-size: 15pt;
 }
 .section-title {
     display: flex;
@@ -75,13 +76,14 @@ section content main .first-parag {
     margin-top: 0em;
 }
 paragraph highlight {
-    background-color: #57720440;
+    background-color: var(--main);
     padding: 0 0.15em;
     border-radius: 0.2em;
-    transition: 0.8s;
+    transition: 1.5s ease 0.5s;
 }
 paragraph highlight:hover {
-    background-color: #57720480;
+    background-color: var(--second);
+    color: white;
     border-radius: 0.1em;
     transition: 0.1s;
 }

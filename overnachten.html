@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texel | Overnachten</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css">
+        <link href="css/header.css" rel="stylesheet" type="text/css" id="header-sheet">
+        <link href="css/section.css" rel="stylesheet" type="text/css">
+
+        <!-- <link href="css/activiteiten/activiteiten.css" rel="stylesheet" type="text/css"> -->
+        <link href="css/activiteiten/activiteiten-card.css" rel="stylesheet" type="text/css">
+
+        <link href="css/core/fonts.css" rel="stylesheet" type="text/css">
+        <link href="css/core/root-variables.css" rel="stylesheet" type="text/css">
+        <link href="css/core/object-style.css" rel="stylesheet" type="text/css">
+        <link href="css/core/z-index.css" rel="stylesheet" type="text/css">
+        <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css"> -->
+        <!-- <link href="css/opmaak.css" rel="stylesheet" type="text/css"> -->
+        <!-- <link href="https://fonts.googleapis.com/ccs?family=Itim&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+        
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    </head>
+    <body id="body">
+        <div class="bg-img"></div>
+        <div class="container">
+            <header>
+                <img class="header-image enabled" id="header-image-fietstocht" src="images/activiteiten/header/fietstocht.jpg" alt="fietstocht">
+                <img class="header-image disabled" id="header-image-karting" src="images/activiteiten/header/karting.jpg" alt="karting">
+                <img class="header-image disabled" id="header-image-lopifit" src="images/activiteiten/header/lopifit.jpg" alt="lopifit">
+                <img class="header-image disabled" id="header-image-blokarten" src="images/activiteiten/header/blokarten.jpg" alt="blokarten">
+                <img class="header-image disabled" id="header-image-wandelen" src="images/activiteiten/header/wandelen.jpg" alt="wandelen">
+                <img class="header-image disabled" id="header-image-speeltuin" src="images/activiteiten/header/speeltuin.jpg" alt="speeltuin">
+                <img class="header-image disabled" id="header-image-duinen" src="images/activiteiten/header/duinen.jpg" alt="duinen">
+                <img class="header-image disabled" id="header-image-hotel" src="images/activiteiten/header/hotel.jpg" alt="hotel">
+            </header>
+            <nav class="menue-container" id="nav">
+                <div class="nav-item" onclick="loadPage('index.html')">
+                    <img class="nav-item-icon" src="images/used/shell.svg">
+                    <p class="nav-item-text">Texel</p>
+                </div>
+                <div class="nav-item" onclick="loadPage('activiteiten.html')">
+                    <img class="nav-item-icon" src="images/used/shell.svg">
+                    <p class="nav-item-text">Activiteiten</p>
+                </div>
+                <div class="nav-item active">
+                    <img class="nav-item-icon" src="images/used/shell.svg">
+                    <p class="nav-item-text">Overnachten</p>
+                </div>
+                <div class="nav-item" onclick="loadPage('contact.html')">
+                    <img class="nav-item-icon" src="images/used/shell.svg">
+                    <p class="nav-item-text">Contact</p>
+                </div>
+            </nav>
+            <section>
+                <div class="section-header">
+                    <div class="section-title">
+                        <img src="images/used/wave.png">
+                        <h1>Overnachten om meer te beleven!</h1>
+                        <img src="images/used/wave.png">
+                    </div>
+                    <div class="aside-title">
+                        <h2 class="aside-header">
+                            Neem je tijd om het eiland goed te ervaren.
+                        </h2>
+                    </div>
+                </div>
+                <content>
+                    <main>
+                        <!-- card sudo design
+                            Image
+                            Title
+                            ---------
+                            description
+                            ---------
+                            btn: website page  | btn: info
+                            Price | btn: order now
+                        -->
+                        <div class="card-display" id="card-display">
+                            <!-- <div class="card" id="example-card">
+                                <div class="card-top">
+                                    <p class="card-title">Surf School 1</p>
+                                    <img class="card-image" src="images/activiteiten/cards/surfschool.png" alt="surfschool">
+                                    <div class="card-description">
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                        Some text to describe this activity here.
+                                    </div>
+                                </div>
+                                <div class="card-line-seperator"></div>
+                                <div class="card-bottom">
+                                    <div class="card-bottom-links">
+                                        <div class="card-button card-button-website" onclick="loadPage('https:\/\/www.surfschool-texel.nl/', true)">Website</div>
+                                        <div class="card-button card-button-info" onclick="loadPage('https:\/\/www.surfschool-texel.nl/surfschool-texel', true)">Informatie</div>
+                                    </div>
+                                    <div class="card-bottom-buy">
+                                        <div class="card-price">€28.99</div>
+                                        <div class="card-button card-button-buy" onclick="loadPage('https:\/\/www.surfschool-texel.nl/direct-boeken', true)">Boeken</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </main>
+                    <aside>                
+                        <div class="aside-bottom">
+                            <div class="aside-bottom-content aside-bottom-text">
+                                <h3>Maak nu een aspraak</h3>
+                                <p>
+                                    <i>U kunt op verschillende manieren contact met ons opnemen.</i>
+                                </p>
+                            </div>
+                            <div class="aside-bottom-content panel contact-panel">
+                                <ul class="contact-items" style="list-style-type: none;">
+                                    <li class="contact-item contact-item-phone" onclick="loadPage('tel:06-2345678', true)">
+                                        <img src="images/icons/phone.png" alt="phone">
+                                        <p>06-2345678</p>
+                                    </li>
+                                    <li class="contact-item contact-item-post" onclick="loadPage('mailto:info@texel-strand.nl', true)">
+                                        <img src="images/icons/post.png" alt="post">
+                                        <p>info@texel-strand.nl</p>
+                                    </li>
+                                    <li class="contact-item contact-item-website" onclick="loadPage('http:\/\/www.texel-strand.nl', true)">
+                                        <img src="images/icons/www.png" alt="website">
+                                        <p>www.texel-strand.nl</p>
+                                    </li>
+                                    <li class="contact-item contact-item-location" onclick="loadPage('http:\/\/www.google.nl/maps/place/Jumbo/@53.0553638,4.7946713,17.87z/data=!4m8!1m2!2m1!1sweststrand,+paal+12!3m4!1s0x47cf30be6efc6e59:0x21787b3cc7f550b6!8m2!3d53.0552991!4d4.7954073', true)">
+                                        <img src="images/icons/location.png" alt="location">
+                                        <p>weststrand, paal 12</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </content>
+            </section>
+            <footer class="menue-container" id="footer">
+                <div class="footer-content footer-left">
+                    <a href="">© Copyright</a>
+                    <p>|</p>
+                    <a href="">Algemene Voorwaarden</a>
+                    <p>|</p>
+                    <a href="">Disclaimer</a>
+                </div>
+                <div class="footer-content footer-right">
+                    <a href="">Texel</a>
+                    <p>|</p>
+                    <a href="">Activiteiten</a>
+                    <p>|</p>
+                    <a href="">Overnachten</a>
+                    <p>|</p>
+                    <a href="">Contact</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+    <script src="js/referanceManager.js"></script>
+    <script src="js/pageLoader.js"></script>
+    <script src="js/events/eventHandler.js"></script>
+    <script src="js/events/scrollEvent.js"></script>
+    <script src="js/headerImageScroll.js"></script>
+    <script src="js/cardGeneration.js"></script>
+    
+</html>

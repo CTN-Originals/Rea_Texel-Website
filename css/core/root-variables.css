@@ -1,11 +1,18 @@
 :root { /* Colors */
-    --bg: #e9decfd0;
-
-    --main: #804410; /* #804410;    /* rgba(128, 68, 16, 1); */
-    --second: #EDD5B5; /* #EDD5B5;  /* rgba(237, 213, 181, 1); */
-    --detail: #577204; /* #577204;  /* rgba(87, 114, 4, 1); */
-    --detail2: #4c5f12; /* #577204;  /* rgba(87, 114, 4, 1); */
-    --accent: #292F19; /* #292F19;  /* rgba(87, 114, 4, 0.2); */
+    
+    /* --main: #804410;
+    --second: #EDD5B5; 
+    --detail: #577204; 
+    --detail2: #4c5f12;
+    --accent: #292F19;  */
+    --bg: #dcf0ffcc;
+    
+    --main: #8fcffd; /* #804410;    /* rgba(128, 68, 16, 1); */
+    --second: #00415f; /* #EDD5B5;  /* rgba(237, 213, 181, 1); */
+    --detail: #0c425c; /* #577204;  /* rgba(87, 114, 4, 1); */
+    --detail2: #ffffff; /* #577204;  /* rgba(87, 114, 4, 1); */
+    --accent: #aaaaaa; /* #292F19;  rgba(87, 114, 4, 0.2); */
+    
 
     --card-main: #a2d5fa;
     --card-second: #00415f;

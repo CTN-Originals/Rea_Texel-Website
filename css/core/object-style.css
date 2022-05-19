@@ -45,10 +45,10 @@ h3 {
 }
 
 .star-list {
-    list-style-image: url("../images/default-ster.svg");
+    list-style-image: url("../../images/used/default-ster.svg");
 }
 .second-star-list {
-    list-style-image: url("../images/second-ster.svg");
+    list-style-image: url("../../images/used/second-ster.svg");
     list-style-position: inside;
     padding-left: 0em;
 }
