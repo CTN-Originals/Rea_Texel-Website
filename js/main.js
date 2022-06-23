@@ -1,6 +1,6 @@
 
 
-function updateElementPositions(scrollPos) {
+function updateElementPositions(scrollPos = null) {
     var nav = document.getElementById('nav');
     var footer = document.getElementById('footer');
     if (nav.offsetTop - scrollPos <= 1) {

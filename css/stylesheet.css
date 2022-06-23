@@ -62,3 +62,27 @@ footer p {color: white;}
     align-items: center;
     gap: 0.2em;
 }
+
+
+@media (max-width: 850px) {
+    header {
+        display: none !important;
+        position: relative;
+        width: 70% !important;
+        right: 15% !important;
+    }
+    .container {
+        width: 100vw !important;
+        min-width: 10em;
+        max-width: unset;
+    }
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around !important;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-right {
+        display: none;
+    }
+}

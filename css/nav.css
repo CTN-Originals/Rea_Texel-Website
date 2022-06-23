@@ -10,14 +10,26 @@ nav {
 
     transition: all 0.5s ease-in-out;
 }
-nav > * {
-    margin: 0.8em;
+.nav-item-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.5em 0em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    width: 100%;
 }
 
 .nav-top-position {
     justify-content: space-around;
 
-    width: calc(100vw - var(--scrollbarWidth)) !important;
+    /* width: calc(100vw - var(--scrollbarWidth)) !important; */
+    width: 100vw !important;
     filter: drop-shadow(2px 2px 1px #000000);
     /* margin-bottom: 2em; */
 
@@ -63,12 +75,69 @@ nav > * {
     transition: 0s;
 }
 
-nav > .active {
-    filter: brightness(105%);
+nav .active {
+    filter: brightness(125%);
     box-shadow: -1px -1px 2px #000000;
 }
 
 .nav-item-icon {
     margin-right: 0.25em;
     width: 40px;
+}
+
+@media (max-width: 850px) {
+    nav {
+        /* flex-direction: column !important; */
+        justify-content: space-between !important;
+        align-items: center !important;
+        /* flex-wrap: wrap; */
+
+        width: 100% !important;
+        flex: 10;
+    }
+    nav > * {
+        margin: 1%;
+    }
+}
+@media (max-width: 600px) {
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        min-width: 5.6em;
+        text-align: center;
+    }
+    .nav-item-icon {display: none;}
+}
+@media (max-width: 500px) {
+    #nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .nav-item-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+        
+        margin: 0.3em 0.25em !important;
+        padding: 0;
+        gap: 0.5em;
+        
+        width: 100%;
+    }
+    
+    .nav-item {
+        position: relative;
+        width: 100%;
+    }
+    .nav-item-icon {
+        display: flex;
+        position: absolute;
+        left: 0.5em;
+    }
+}
+@media (max-width: 400px) {
+    .nav-item-icon {display: none;}
 }

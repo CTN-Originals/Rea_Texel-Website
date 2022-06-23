@@ -16,6 +16,14 @@ document.addEventListener('scroll', function(e) {
 
 window.addEventListener('resize', function(event) {
 	updateScales();
+	updateElementPositions();
+	if (this.screen.size <= 850) {
+		baseElements.scrollbarWidth = 0;
+	}
+	else {
+		baseElements.scrollbarWidth = baseElements.originalScrollbarWidth;
+	}
+	this.document.documentElement.style.setProperty('--scrollbarWidth', baseElements.scrollbarWidth)
 }, true);
 
 

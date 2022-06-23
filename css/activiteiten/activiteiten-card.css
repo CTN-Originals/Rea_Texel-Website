@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1em;
 
 }
@@ -189,4 +189,15 @@
     border-radius: 0;
 
     transition: 0.01s
+}
+
+
+@media (max-width: 500px) {
+    .card-display {
+        flex-direction: column !important;
+    }
+    .card {
+        flex-direction: column !important;
+        width: 90% !important;
+    }
 }

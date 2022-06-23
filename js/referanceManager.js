@@ -4,6 +4,7 @@ var baseElements = {
     footer: document.getElementById('footer'),
     scales: {
         scrollbarWidth: getScrollbarWidth(),
+        originalsScrollbarWidth: getScrollbarWidth()
     }
 }
 
